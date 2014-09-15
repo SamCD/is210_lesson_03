@@ -11,5 +11,6 @@ elif BP <= 139:
 elif BP <= 159:
     BP_STATUS = "High"
 else:
-    BPSTATUS = "Emergency"
+    BP_STATUS = "Emergency"
 STATEMENT = "Your blood pressure is at a level of {0}".format(BP_STATUS)
+print STATEMENT

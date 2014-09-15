@@ -32,6 +32,6 @@ elif PRINCIPAL <= 1000000 and DURATION <= 15 and PQ == "y":
     IR = decimal.Decimal(2.05)
 else:
     IR = decimal.Decimal(2.62)
-TOTAL = round(PRINCIPAL * ((1 + ((IR/100) / 12)) ** (12 * DURATION)),2)
+TOTAL = int(PRINCIPAL * ((1 + ((IR/100) / 12)) ** (12 * DURATION)))
 REPORT = " Loan Report for: {0} \n---------------------------------------- \n	Principal: ${1}\n	Duration: {2}\n	Pre-qualified?: {3}\n \n	Total: ${4:8}".format(NAME, PRINCIPAL, DURATION, PQ, TOTAL)
 print REPORT
