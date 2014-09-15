@@ -14,4 +14,5 @@ elif BASE == "Manatee":
       HIGHLIGHT = raw_input("WHat is your highlight, Bone White or Just White?")
    elif ACCENT == "Spartan Sage":
       HIGHLIGHT = raw_input("What is your highlight, Fractal White or Not White?")
-      print "You have selected {0}, (1} and (2)".format(BASE, ACCENT, HIGHLIGHT)
+MESSAGE = "You have selected {0}, {1} and {2}".format(BASE, ACCENT, HIGHLIGHT)
+print MESSAGE
